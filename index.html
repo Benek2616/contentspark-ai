@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContentSpark AI – Pomysły na content</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">⚡ ContentSpark AI</div>
+      <p>Szybkie pomysły na TikToka, Reelsy, Shorts i posty</p>
+    </header>
+
+    <section class="card">
+      <label>Platforma</label>
+      <div class="platforms">
+        <button class="platform active" data-platform="tiktok">TikTok</button>
+        <button class="platform" data-platform="instagram">Instagram</button>
+        <button class="platform" data-platform="youtube">YT Shorts</button>
+        <button class="platform" data-platform="x">X / Twitter</button>
+      </div>
+
+      <label>Tematyka / nisza</label>
+      <input type="text" id="niche" placeholder="np. produktywność, fitness, gotowanie, AI, podróże...">
+
+      <label>Styl</label>
+      <select id="style">
+        <option value="educational">Edukacyjny / Wartościowy</option>
+        <option value="entertaining">Rozrywkowy / Zabawny</option>
+        <option value="story">Storytelling / Osobisty</option>
+        <option value="controversial">Prowokujący / Dyskusyjny</option>
+        <option value="motivational">Motywacyjny</option>
+      </select>
+
+      <button id="generate" class="primary">Wygeneruj pomysły</button>
+    </section>
+
+    <section id="results" class="hidden">
+      <div class="results-header">
+        <h2>Twoje pomysły</h2>
+        <button id="regenerate" class="small-btn">Losuj ponownie</button>
+      </div>
+      <div id="ideas-list"></div>
+    </section>
+
+    <footer>
+      Działa w 100% lokalnie • Zero konta • Zero limitów
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
